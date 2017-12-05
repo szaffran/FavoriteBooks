@@ -67,7 +67,6 @@
 				97284AEE1FD6D386001BD2E2 /* View */,
 				2C5E3E201E514CC400C02C5F /* Assets.xcassets */,
 				2C5E3E251E514CC400C02C5F /* Info.plist */,
-				97436FEA1FD6DB2C0045A517 /* BookFormTableVC.swift */,
 			);
 			path = FavoriteBook;
 			sourceTree = "<group>";
@@ -90,6 +89,7 @@
 		97284AF01FD6D3A4001BD2E2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				97436FEA1FD6DB2C0045A517 /* BookFormTableVC.swift */,
 				2C5E3E331E514EA700C02C5F /* BookTableViewController.swift */,
 				2C5E3E2F1E514D3400C02C5F /* BookFormViewController.swift */,
 			);
