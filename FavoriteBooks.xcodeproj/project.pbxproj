@@ -14,6 +14,7 @@
 		2C5E3E2C1E514CE500C02C5F /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E3E2B1E514CE500C02C5F /* Book.swift */; };
 		2C5E3E301E514D3400C02C5F /* BookFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E3E2F1E514D3400C02C5F /* BookFormViewController.swift */; };
 		2C5E3E341E514EA700C02C5F /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E3E331E514EA700C02C5F /* BookTableViewController.swift */; };
+		97436FEB1FD6DB2C0045A517 /* BookFormTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97436FEA1FD6DB2C0045A517 /* BookFormTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2C5E3E2B1E514CE500C02C5F /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		2C5E3E2F1E514D3400C02C5F /* BookFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookFormViewController.swift; sourceTree = "<group>"; };
 		2C5E3E331E514EA700C02C5F /* BookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
+		97436FEA1FD6DB2C0045A517 /* BookFormTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookFormTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				97284AEE1FD6D386001BD2E2 /* View */,
 				2C5E3E201E514CC400C02C5F /* Assets.xcassets */,
 				2C5E3E251E514CC400C02C5F /* Info.plist */,
+				97436FEA1FD6DB2C0045A517 /* BookFormTableVC.swift */,
 			);
 			path = FavoriteBook;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97436FEB1FD6DB2C0045A517 /* BookFormTableVC.swift in Sources */,
 				2C5E3E341E514EA700C02C5F /* BookTableViewController.swift in Sources */,
 				2C5E3E1A1E514CC400C02C5F /* AppDelegate.swift in Sources */,
 				2C5E3E301E514D3400C02C5F /* BookFormViewController.swift in Sources */,
