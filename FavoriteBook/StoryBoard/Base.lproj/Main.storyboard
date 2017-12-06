@@ -43,7 +43,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Bcg-WF-Uj1" kind="show" identifier="EditBook" id="1HK-qg-XiN"/>
+                                    <segue destination="cS2-yO-eby" kind="show" identifier="EditBook" id="SCc-Bh-ddL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -55,7 +55,7 @@
                     <navigationItem key="navigationItem" id="l3L-p8-guE">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1M3-DT-Y72">
                             <connections>
-                                <segue destination="Bcg-WF-Uj1" kind="show" identifier="AddBook" id="c4O-JN-Kuz"/>
+                                <segue destination="cS2-yO-eby" kind="show" identifier="AddBook" id="kZY-hV-1vr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -77,13 +77,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your favorite book?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbi-r4-kxI">
-                                <rect key="frame" x="84" y="133" width="208" height="20.5"/>
+                                <rect key="frame" x="84" y="89" width="208" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="L0e-HV-BrN">
-                                <rect key="frame" x="46" y="207.5" width="283" height="150"/>
+                                <rect key="frame" x="46" y="163.5" width="283" height="150"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ey3-rN-75z">
                                         <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
@@ -112,7 +112,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvn-sh-Z81">
-                                <rect key="frame" x="170" y="389.5" width="34" height="30"/>
+                                <rect key="frame" x="170" y="345.5" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="saveButtonTapped:" destination="Bcg-WF-Uj1" eventType="touchUpInside" id="cb5-dt-733"/>
@@ -141,7 +141,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nce-IQ-AXX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="zV6-Sw-Nuu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1804" y="-70.614692653673174"/>
+            <point key="canvasLocation" x="2009" y="-443"/>
         </scene>
         <!--Book Form TableVC-->
         <scene sceneID="H9P-nY-zUe">
@@ -230,16 +230,16 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Size" id="B60-dy-iwh">
+                            <tableViewSection headerTitle="Genre" id="6Pw-c3-enE" userLabel="Length">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gIL-5N-u6a">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1gB-uc-AvQ">
                                         <rect key="frame" x="0.0" y="355.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gIL-5N-u6a" id="gcn-6h-Z24">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1gB-uc-AvQ" id="cc3-Hf-Q1n">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hhY-IR-JbR">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iDP-Iv-88r">
                                                     <rect key="frame" x="0.0" y="-0.5" width="375" height="44"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -247,10 +247,10 @@
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="hhY-IR-JbR" firstAttribute="top" secondItem="gcn-6h-Z24" secondAttribute="top" id="GSc-UF-JH6"/>
-                                                <constraint firstAttribute="trailing" secondItem="hhY-IR-JbR" secondAttribute="trailing" id="UoZ-rA-ewt"/>
-                                                <constraint firstAttribute="bottom" secondItem="hhY-IR-JbR" secondAttribute="bottom" id="apc-5D-pcj"/>
-                                                <constraint firstItem="hhY-IR-JbR" firstAttribute="leading" secondItem="gcn-6h-Z24" secondAttribute="leading" id="e7e-M2-aex"/>
+                                                <constraint firstItem="iDP-Iv-88r" firstAttribute="top" secondItem="cc3-Hf-Q1n" secondAttribute="top" id="d01-qI-XTH"/>
+                                                <constraint firstAttribute="trailing" secondItem="iDP-Iv-88r" secondAttribute="trailing" id="uVK-M6-lqu"/>
+                                                <constraint firstAttribute="bottom" secondItem="iDP-Iv-88r" secondAttribute="bottom" id="yvh-r5-lGu"/>
+                                                <constraint firstItem="iDP-Iv-88r" firstAttribute="leading" secondItem="cc3-Hf-Q1n" secondAttribute="leading" id="z2E-cR-3Db"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -265,18 +265,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hYx-zh-7BW">
-                                                    <rect key="frame" x="0.0" y="-0.5" width="375" height="44"/>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvx-IE-tRh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                    <state key="normal" title="Save"/>
+                                                    <connections>
+                                                        <segue destination="8zb-fi-gez" kind="unwind" identifier="UnwindToBookTable" unwindAction="prepareForUnwindWithSegue:" id="LdP-cM-FTn"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="hYx-zh-7BW" firstAttribute="leading" secondItem="1Wp-h4-zIJ" secondAttribute="leading" id="H5D-LJ-Gy0"/>
-                                                <constraint firstItem="hYx-zh-7BW" firstAttribute="top" secondItem="1Wp-h4-zIJ" secondAttribute="top" id="JVP-WZ-EvH"/>
-                                                <constraint firstAttribute="trailing" secondItem="hYx-zh-7BW" secondAttribute="trailing" id="W9o-o5-eg1"/>
-                                                <constraint firstAttribute="bottom" secondItem="hYx-zh-7BW" secondAttribute="bottom" id="tdf-8L-roT"/>
+                                                <constraint firstAttribute="bottom" secondItem="gvx-IE-tRh" secondAttribute="bottom" id="Tyj-X2-oB2"/>
+                                                <constraint firstItem="gvx-IE-tRh" firstAttribute="leading" secondItem="1Wp-h4-zIJ" secondAttribute="leading" id="akF-qJ-CQ0"/>
+                                                <constraint firstAttribute="trailing" secondItem="gvx-IE-tRh" secondAttribute="trailing" id="fEv-fJ-BUW"/>
+                                                <constraint firstItem="gvx-IE-tRh" firstAttribute="top" secondItem="1Wp-h4-zIJ" secondAttribute="top" id="htG-dp-v0M"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -289,15 +290,17 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="GoButton" destination="gvx-IE-tRh" id="ufs-jq-Wq4"/>
                         <outlet property="authorTextField" destination="SVd-zX-OHp" id="LWX-MB-sdi"/>
                         <outlet property="genreTextField" destination="M14-tA-LbD" id="Q5d-dx-mlI"/>
-                        <outlet property="sizeTextField" destination="hhY-IR-JbR" id="dve-Kx-WOw"/>
+                        <outlet property="lengthTextField" destination="iDP-Iv-88r" id="XJ4-cg-xHp"/>
                         <outlet property="titleTextField" destination="twh-ln-PZV" id="PnH-XS-OAk"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2dp-pF-qTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="8zb-fi-gez" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2478" y="-70"/>
+            <point key="canvasLocation" x="2009" y="237"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="X24-gS-ZXq">
@@ -319,6 +322,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="c4O-JN-Kuz"/>
+        <segue reference="SCc-Bh-ddL"/>
     </inferredMetricsTieBreakers>
 </document>
